@@ -20,7 +20,7 @@ distance_list = []
 answer = float('inf')
 for i in range(1, n - 1):
     temp = positions.pop(i)
-    print(positions)
+    # print(positions)
     result = 0
     for j in range(n - 2):
         result += distance(positions[j], positions[j + 1])
