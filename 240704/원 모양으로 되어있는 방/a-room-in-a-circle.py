@@ -26,6 +26,11 @@
 # 일반화하면 j-i에다가 음수도 처리하기 위해서 j-i+n이 된다. # 근데 이제 순환하므로 n을 나눠준다.
 # 거릴잴때 참고
 
+# 순환 회전 (Circular Rotation)
+# new_index = (i + k) % n
+# 순환 배열에서의 거리 계산
+#  dist = (j + n - i) % n
+
 n = int(input())
 room = []
 
