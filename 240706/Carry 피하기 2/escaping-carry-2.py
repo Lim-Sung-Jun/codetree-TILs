@@ -14,14 +14,14 @@ def Is_carry(a, b, c):
     a = [0] * pad_a + a
     b = [0] * pad_b + b
     c = [0] * pad_c + c
-    # print(a, b, c)
     new_list = [0] * max_length
     for i in range(max_length):
         temp = int(a[i]) + int(b[i]) + int(c[i])
-        if temp > 10:
+        if temp >= 10:
             return True, 0
         else:
             new_list[i] = str(temp)
+    # print(new_list)
     return False, int(''.join(new_list)) # 이게 돼야함
 
 n = int(input())
