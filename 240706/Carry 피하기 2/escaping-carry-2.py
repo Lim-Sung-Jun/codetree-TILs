@@ -43,7 +43,7 @@ for i in range(n):
 # 패딩 후 각 자리를 확인하면서 10이 넘는지 보고 넘지 않으면 저장한다.
 # 리스트에 있는 숫자를 하나의 숫자로 바꾸기 위해서 string을 사용한다.
  
-answer = float('-inf')
+answer = -1
 for i in range(n - 2):
     for j in range(i + 1, n - 1):
         for k in range(j + 1, n - 2):
