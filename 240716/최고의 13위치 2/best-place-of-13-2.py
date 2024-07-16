@@ -2,7 +2,10 @@
 # 1, 0
 # 1*3 격자 2개를 겹치지 않게 적절히 잘 잡아서
 # 격자안에 동전의 갯수를 최대로 해라
-# ㅇ ㅇ ㅇ
+# ㅇ ㅇ ㅇ 가로 세로가 정해져있어서 쉬웠다.
+# 2개를 놓기 위해서 for문을 4번 써야한다. 그나마 줄일 수 있는 방법이 for k in range(i, n):
+# graph에 표시를 하려다가 나중에 갯수 세기가 어려울 것 같아서 visited를 만들어서 체크를 했다.
+# 둘 수 있는 모든 곳을 둬보고 점수를 구했다.
 
 n = int(input())
 
@@ -17,7 +20,7 @@ for i in range(n):
         visited[i][j] = True
         visited[i][j + 1] = True
         visited[i][j + 2] = True
-        for k in range(i, n):
+        for k in range(i, n):  # 시간 복잡도를 줄이자.
             for x in range(n - 2):
                 if visited[k][x] == False and visited[k][x + 1] == False and visited[k][x + 2] == False:
                     count = 0
