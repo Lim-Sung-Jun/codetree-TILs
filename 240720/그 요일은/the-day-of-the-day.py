@@ -5,7 +5,7 @@ key = input()
 
 for i in range(7):
     if days[i] == key:
-        key = i
+        key = i # 0
         break
 
 first, second = 0, 0
@@ -17,12 +17,12 @@ for i in range(1, m2):
     second += days_per_month[i]
 second += d2
 
-result = abs(second - first)
+result = abs(second - first) # 1
 
-x = result // 7
-y = result % 7
+x = result // 7 # 0
+y = result % 7 #
 
-if y <= key:
+if y >= key:
     x = x + 1
 
-print(x)
+print(x) # 1
