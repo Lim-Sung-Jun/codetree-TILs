@@ -15,4 +15,4 @@ for i in range(1, m2):
 second += d2
 # print(d2)
 
-print(abs(second - first) + 1)
+print(abs(second - first) + 1) # 왜 +1하지? 그대로 빼면 시작일이 제외됨
