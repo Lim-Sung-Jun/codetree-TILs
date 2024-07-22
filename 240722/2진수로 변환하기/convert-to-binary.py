@@ -8,7 +8,7 @@ while True:
     if n < 2:
         break
 
-result.append(1)
+result.append(n % 2)
 
 for c in result[::-1]:
     print(c, end = '')
