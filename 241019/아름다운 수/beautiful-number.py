@@ -24,8 +24,7 @@ def fn(n_list, count):
             return 1
 
     for i in range(1, n + 1):
-        n_list.append(i)
-        count += fn(n_list, count)
+        count += fn(n_list + [i], count)
     
     return count
 
