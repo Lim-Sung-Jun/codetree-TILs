@@ -32,7 +32,7 @@ def fn(n_list):
 
     # 하나의 트리에서 보면 count는 0이고 자식으로 부터 count를 받는다.
     count = 0
-    for i in range(1, n + 1):
+    for i in range(1, 5):
         count += fn(n_list + [i])
     
     return count
